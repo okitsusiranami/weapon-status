@@ -10,12 +10,11 @@ export async function fetchWeapons(settings: Settings, logger: Logger) {
   const response = await client.weapons.getWeapons({
     version: "current",
     gamemode: "br",
-    
   });
 
   const weaponMap = response.data;
   const weapons = Object.values(weaponMap);
 
-  logger.info(`Fetched ${weapons.length} BR weapons (version: ${response.version})`);
+  logger.info(`Fetched ${weapons.length} BR weapons`);
   return weapons;
 }
