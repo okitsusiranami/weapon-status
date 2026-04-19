@@ -1,0 +1,20 @@
+{
+  "name": "weapon-status",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@yaelouuu/fortnite-api": "^6.0.0",
+    "dotenv": "^16.4.0",
+    "google-auth-library": "^9.0.0",
+    "google-spreadsheet": "^4.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.7.0"
+  }
+}
